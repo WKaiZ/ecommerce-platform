@@ -1,3 +1,3 @@
-# ecommerce-platform
+# InnoCaption Technical Case Study
 
-Technical Case Study for InnoCaption
+Create a web page for an e-commerce platform using React.
