@@ -1,0 +1,52 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: 96vh;
+}
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cartIcon{
+    font-size: 30px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.homeIcon{
+    font-size: 25px;
+    margin-left: 16px;
+    margin-bottom: 15px;
+}
+.container{
+    padding: 8px;
+    background-color:cornsilk;
+}
+.appMenu{
+    border: none;
+}
+.pageContent{
+    overflow-y: auto;
+    margin-top: 2px;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item, .itemCardBadge{
+    margin: 8px;
+    background-color:bisque;
+}
+.itemImage{
+    height: 150px !important;
+    object-fit: scale-down;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+}
