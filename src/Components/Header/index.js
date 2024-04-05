@@ -1,5 +1,5 @@
 import { ShoppingCartOutlined } from "@ant-design/icons";
-import { Badge, Drawer, InputNumber, Table, Typography, message, Space } from "antd";
+import { Badge, Drawer, InputNumber, Table, Typography, message } from "antd";
 import { useEffect, useState } from "react";
 import { cart, removeFromCart, updateCart } from "../../DummyAPI";
 

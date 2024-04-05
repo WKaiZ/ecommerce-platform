@@ -1,4 +1,4 @@
-import { Button, Card, Image, List, message, Typography, Select, Input, Space } from "antd";
+import { Button, Card, Image, List, message, Typography, Select, Input, Space, Rate } from "antd";
 import { useEffect, useState } from "react";
 import { addToCart, getProducts } from "../../DummyAPI";
 import { useParams } from "react-router-dom";
@@ -38,13 +38,13 @@ function Products() {
       <div className="title">
         <div>
         <Typography.Text>View Items Sorted By: </Typography.Text>
-        <Select onChange={(value) => { setOrder(value); }} defaultValue={"Default"}
+        <Select onChange={(value) => { setOrder(value); }} defaultValue={"Default (Random!)"}
           options={[
             { label: "Price: Ascending", value: "ascend", },
             { label: "Price: Descending", value: "descend", },
             { label: "Rating: Ascending", value: "rateAscend", },
             { label: "Rating: Descending", value: "rateDescend", },
-            { label: "Default", value: "", },]}
+            { label: "Default (Random!)", value: "", },]}
         ></Select>
         </div>
         <Space.Compact>
@@ -65,6 +65,7 @@ function Products() {
                   <Image className="itemImage" src={item.thumbnail} />
                 }
                 actions={[
+                  <Rate disabled defaultValue={item.rating} />,
                   <AddToCart item={item} />,
                 ]}
               >
